@@ -1,6 +1,10 @@
 URL: https://github.com/aSushiboi/CSCI2020u_Final
 
+How to build:
+Open powershell:
 
+Type: gradle buildSerer
+Type: gradle buildClient
 How to run:
 	
 
