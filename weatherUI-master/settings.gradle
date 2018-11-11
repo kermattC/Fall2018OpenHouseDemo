@@ -1,0 +1,4 @@
+include ':client'
+project(':client').projectDir = new File('client/')
+include ':server'
+project(':server').projectDir = new File('server/')

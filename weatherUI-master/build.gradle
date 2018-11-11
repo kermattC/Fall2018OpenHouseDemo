@@ -1,0 +1,44 @@
+group 'CSCI2020U'
+version '1.0'
+
+apply plugin: 'java'
+
+
+task depServer(type: GradleBuild) {
+  buildFile = 'server/build.gradle'
+  tasks = ['dependencies']
+}
+
+task depClient(type: GradleBuild) {
+  buildFile = 'client/build.gradle'
+  tasks = ['dependencies']
+}
+
+task buildServer(type: GradleBuild) {
+  buildFile = 'server/build.gradle'
+  tasks = ['build']
+}
+
+task buildClient(type: GradleBuild) {
+  buildFile = 'client/build.gradle'
+  tasks = ['build']
+}
+
+task runClient(type: GradleBuild) {
+  buildFile = 'client/build.gradle'
+  tasks = ['run']
+}
+
+
+task runServer(type: GradleBuild) {
+  buildFile = 'server/build.gradle'
+  tasks = ['run']
+}
+jar{
+	manifest{
+		attributes 'Main-Class': 'Main'
+	}
+	from configurations.runtime.collect {zipTree(it)}
+}
+
+build.finalizedBy('buildServer', 'buildClient')

@@ -1,0 +1,11 @@
+Date: Thu/04/Oct/2018
+Time : 15:08:PM
+City: Ottawa
+Country: CA
+Weather: few clouds
+Temperature: 24.0 °C
+Humidity: 57.0%
+Low: 24.0°C
+High: 24.0°C
+Clouds: 20.0%°C
+Wind Speed: 10.8km

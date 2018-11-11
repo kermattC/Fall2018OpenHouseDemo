@@ -1,0 +1,11 @@
+Date: Thu/04/Oct/2018
+Time : 15:07:PM
+City: Biysk
+Country: RU
+Weather: clear sky
+Temperature: -1.15 °C
+Humidity: 80.0%
+Low: -1.15°C
+High: -1.15°C
+Clouds: 8.0%°C
+Wind Speed: 1.27km
