@@ -1,4 +1,4 @@
-URL: https://github.com/aSushiboi/CSCI2020u_Final
+URL : https://github.com/aSushiboi/CSCI2020u_Final
 
 How to build:
 Open powershell:
