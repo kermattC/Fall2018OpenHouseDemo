@@ -92,17 +92,21 @@
                            <font>
                               <Font name="Josefin Sans" size="14.0" />
                            </font></Label>
-                        <Pane layoutX="205.0" layoutY="161.0" opacity="0.29" prefHeight="164.0" prefWidth="255.0" style="-fx-background-color: #d3d3d3;" />
-                        <ImageView fitHeight="86.0" fitWidth="248.0" layoutX="237.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icons/uoit.png" />
-                           </image>
-                        </ImageView>
-                        <TextArea layoutX="205.0" layoutY="280.0" prefHeight="43.0" prefWidth="255.0" style="-fx-border-color: transparent;" text="Made by: Dom Cabitac, Matt Chan, Ridge Reventar&#10;CSCI 2020U Final Project: Open House Demo Version">
-                           <font>
-                              <Font size="10.0" />
-                           </font>
-                        </TextArea>
+                        <Pane layoutX="262.0" layoutY="140.0" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane layoutX="224.0" layoutY="155.0" opacity="0.89" prefHeight="164.0" prefWidth="255.0" style="-fx-background-color: #d3d3d3;">
+                           <children>
+                              <ImageView fitHeight="86.0" fitWidth="248.0" layoutX="25.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/uoit.png" />
+                                 </image>
+                              </ImageView>
+                              <TextArea layoutY="121.0" prefHeight="43.0" prefWidth="255.0" style="-fx-border-color: transparent;" text="Made by: Dom Cabitac, Matt Chan, Ridge Reventar&#10;CSCI 2020U Final Project: Open House Demo Version">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </Pane>
                      </children></AnchorPane>
             </content>
                <graphic>
@@ -127,6 +131,17 @@
                               <Image url="@icons/globeGraphic.png" />
                            </image>
                         </ImageView>
+                        <Pane layoutX="215.0" layoutY="171.0" opacity="0.29" prefHeight="164.0" prefWidth="255.0" style="-fx-background-color: #d3d3d3;" />
+                        <TextArea layoutX="215.0" layoutY="290.0" prefHeight="43.0" prefWidth="255.0" style="-fx-border-color: transparent;" text="Made by: Dom Cabitac, Matt Chan, Ridge Reventar&#10;CSCI 2020U Final Project: Open House Demo Version">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextArea>
+                        <ImageView fitHeight="86.0" fitWidth="248.0" layoutX="247.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/uoit.png" />
+                           </image>
+                        </ImageView>
                      </children></AnchorPane>
             </content>
                <graphic>
@@ -141,7 +156,7 @@
                 <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f4f6f7;">
                      <children>
-                        <Button fx:id="saveButton" layoutX="268.0" layoutY="118.0" mnemonicParsing="false" onAction="#saveButton" text="Save details">
+                        <Button fx:id="saveButton" layoutX="273.0" layoutY="74.0" mnemonicParsing="false" onAction="#saveButton" text="Save details">
                            <graphic>
                               <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -149,13 +164,24 @@
                                  </image>
                               </ImageView>
                            </graphic></Button>
-                        <Label layoutX="230.0" layoutY="155.0" text="Save weather details as a .txt document">
+                        <Label layoutX="235.0" layoutY="111.0" text="Save weather details as a .txt document">
                            <font>
                               <Font name="Avenir Light" size="11.0" />
                            </font></Label>
                         <ImageView fitHeight="282.0" fitWidth="239.0" layoutX="35.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@icons/fileGraphic.png" />
+                           </image>
+                        </ImageView>
+                        <TextArea layoutX="215.0" layoutY="290.0" prefHeight="43.0" prefWidth="255.0" style="-fx-border-color: transparent;" text="Made by: Dom Cabitac, Matt Chan, Ridge Reventar&#10;CSCI 2020U Final Project: Open House Demo Version">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </TextArea>
+                        <Pane layoutX="215.0" layoutY="171.0" opacity="0.29" prefHeight="164.0" prefWidth="255.0" style="-fx-background-color: #d3d3d3;" />
+                        <ImageView fitHeight="86.0" fitWidth="248.0" layoutX="247.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/uoit.png" />
                            </image>
                         </ImageView>
                      </children></AnchorPane>

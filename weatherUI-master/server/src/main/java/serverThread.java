@@ -52,7 +52,12 @@ public class serverThread implements Runnable {
                     long currentHoursEST = getESTHour(currentHoursGMT);
                     dayOrNight = dayCheck(currentHoursEST);
                     cityID = "6058560";
-                } else if (cityNameSelect.equals("Biysk, RU")) {
+                } else if (cityNameSelect.equals("New York, USA")){
+                    long currentHoursEST = getESTHour(currentHoursGMT);
+                    dayOrNight = dayCheck(currentHoursEST);
+                    cityID = "5128638";
+                } 
+                else if (cityNameSelect.equals("Biysk, RU")) {
                     long currentHoursMSK = getMSKHour(currentHoursGMT);
                     cityID = "1510018";
                     dayOrNight = dayCheck(currentHoursMSK);
@@ -70,7 +75,12 @@ public class serverThread implements Runnable {
                     long currentHoursNGB = getNGBHour(currentHoursGMT);
                     cityID = "2641430";
                     dayOrNight = dayCheck(currentHoursNGB);
-                } else if (cityNameSelect.equals("Dubai, AE")) {
+                } else if (cityNameSelect.equals("London, GB")){
+                    long currentHoursNGB = getNGBHour(currentHoursGMT);
+                    cityID = "2643743";
+                    dayOrNight = dayCheck(currentHoursNGB);
+                }
+                 else if (cityNameSelect.equals("Dubai, AE")) {
                     long currentHoursDAE = getDAEHour(currentHoursGMT);
                     cityID = "292223";
                     dayOrNight = dayCheck(currentHoursDAE);
@@ -78,8 +88,12 @@ public class serverThread implements Runnable {
                     long currentHoursAJP = getAJPHour(currentHoursGMT);
                     cityID = "2113126";
                     dayOrNight = dayCheck(currentHoursAJP);
-                }else{
-                    // cityID = "6058560";
+                }else if (cityNameSelect.equals("Shanghai, CN")){
+                    long currentHoursHKT = getHKTHour(currentHoursGMT);
+                    cityID = "1796236";
+                    dayOrNight = dayCheck(currentHoursHKT);
+                }
+                else{
                     cityID = "6094578";
                     long currentHoursEST = getESTHour(currentHoursGMT);
                     dayOrNight = dayCheck(currentHoursEST);

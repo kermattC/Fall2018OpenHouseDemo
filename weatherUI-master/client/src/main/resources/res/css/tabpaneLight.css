@@ -11,7 +11,7 @@
 }
 
 .tab:selected {
-    -fx-background-color: #d3d3d3;
+    -fx-background-color:transparent;
     -fx-background-radius: 0;
     -fx-background-insets: 0;
     -fx-border-width: 0 0 2 0;
@@ -19,7 +19,7 @@
 }
 
 .tab:focused {
-    -fx-focus-color: transparent;
+    -fx-focus-color:transparent;
 }
 
 .tab-pane *.tab-header-background {
@@ -36,6 +36,7 @@
     -fx-focus-color: transparent;
     -fx-border-color: transparent;
 }
+
 
 .tab-down-button {
     -fx-padding: 0;

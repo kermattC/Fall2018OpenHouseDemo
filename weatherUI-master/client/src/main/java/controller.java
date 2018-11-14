@@ -31,7 +31,7 @@ public class controller {
     @FXML private Pane backgroundGif;
     @FXML private Label locationLabel,tempLabel,tempNameLabel,tempDescriptionLabel,humidityLabel,minTempLabel,maxTempLabel,windspeedLabel,cloudLabel, datetimeLabel;
     @FXML private ComboBox cityMenu;
-    ObservableList<String> cityMenuItems = FXCollections.observableArrayList("Mississauga, CA", "Guelph, CA", "Ottawa, CA","Kingston, CA", "Markham, CA", "London, CA", "Biysk, RU", "Novinki, RU", "Hong Kong, HK", "Northampton, GB", "Dubai, AE", "Akita, JP");
+    ObservableList<String> cityMenuItems = FXCollections.observableArrayList("Mississauga, CA", "Guelph, CA", "Ottawa, CA","Kingston, CA", "Markham, CA", "London, CA", "New York, USA", "Biysk, RU", "Novinki, RU", "Hong Kong, HK", "Shanghai, CN", "Northampton, GB", "London, GB", "Dubai, AE", "Akita, JP");
 
     public void initialize() {
 
@@ -43,11 +43,11 @@ public class controller {
         long currentSeconds = totalSeconds % 60;
         long currentMinutes = totalMinutes % 60;
         long currentHours = totalHours % 24;
-        if (weatherData.getCountryCode().equals("CA")){
+        if (weatherData.getCountryCode().equals("CA") || weatherData.getCountryCode().equals("US")){
             currentHours = getESTHour(currentHours);
         }else if (weatherData.getCountryCode().equals("RU")){
             currentHours = getMSKHour(currentHours);
-        }else if (weatherData.getCountryCode().equals("HK")){
+        }else if (weatherData.getCountryCode().equals("HK") || weatherData.getCountryCode().equals("CN")){
             currentHours = getHKTHour(currentHours);
         }else if (weatherData.getCountryCode().equals("GB")){
             currentHours = getNGBHour(currentHours);
@@ -285,7 +285,7 @@ public class controller {
         }
         return currentHoursMSK;
     }
-    // Returns the time in Hong Kong
+    // Returns the time in Hong Kong/ Shanghai
     public long getHKTHour(long currentHoursGMT){
         long currentHoursHKT = currentHoursGMT + 8;
         if (currentHoursHKT > 24){
