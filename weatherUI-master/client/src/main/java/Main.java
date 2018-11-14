@@ -21,8 +21,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-
-
 public class Main extends Application {
 
     private double xOffset = 0;

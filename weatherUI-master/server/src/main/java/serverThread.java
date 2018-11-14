@@ -152,7 +152,6 @@ public class serverThread implements Runnable {
                 System.out.println(cloudMap.get("all"));
 
                 inputSocket.close();
-                //System.out.println("Socket Status: " + inputSocket.getInputStream().read());
             } catch (IOException e) {
                 e.printStackTrace();
             }
